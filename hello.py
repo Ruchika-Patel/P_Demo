@@ -178,3 +178,16 @@ f.close()  """
     show(n+1)
 show(1)"""
 
+ #1. Check if a given number is positive.
+num = int(input("Enter the Number ="))
+if(num >= 0):
+    print(num ," is positive Number")
+else:
+    print(num ," is Negative Number")
+
+# 2. Check if a given number is even.
+num = int(input("Enter the Number = "))
+if(num % 2 == 0):
+    print("Enen Number")
+else:
+    print("Odd Number")
