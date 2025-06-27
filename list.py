@@ -54,10 +54,10 @@ else:
     print("Not Exist element")"""
 
 #  11. How can you count the occurrences of a specific element in a list?
-list2 = [12,23,34,45,56,67,12,34,]
+"""list2 = [12,23,34,45,56,67,12,34,]
 num = int(input("Enter the number = "))
 result = list2.count(num)
-print(result)
+print(result)"""
 
 
 #  12. How do you slice a list to get a sub-list?
@@ -92,14 +92,19 @@ cnt = list + list2
 print(cnt)"""
 
 #  18. How can you check if all elements in a list satisfy a certain condition?
-"""name = ["Ruchika","Ranu","patel"]
-result = all(i.startswith("R") for i in name)
-print(result)"""
+"""name = ["Ruchika","Ranu","Ratel"]
+if all(i.startswith("R") for i in name):
+    print("all elements in a list satisfy a certain condition")
+else:
+    print("Not all elements in a list satisfy a certain condition")"""
 
-#  19. Howcanyoucheck if any element in a list satisfies a certain condition?
+#  19. How can you check if any element in a list satisfies a certain condition?
 """name = ["Ruchika","Ranu","patel"]
-result = any(i.endswith("a") for i in name)
-print(result)"""
+if any(i.endswith("a") for i in name):
+    print("any elements in a list satisfy a certain condition")
+else:
+    print("Not any elements in a list satisfy a certain condition")"""
+
 
 #  20. How do you find the minimum and maximum elements in a list?
 """list = [2,5,7,5,3,1,8,7,9]
