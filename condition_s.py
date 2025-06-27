@@ -50,7 +50,7 @@ else:
     print("No. is not include 1 to 10")"""
    
 # 8. Check if a given string is a palindrome.
-str = input("Enter the word =")
+"""str = input("Enter the word =")
 i= len(str)-1
 rev = ""
 while(i >= 0):
@@ -61,7 +61,7 @@ if(str == rev):
     print("This is palindrome")
 else:
     print("This is not palindrome")
-
+"""
 # 9. Check if a given number is a prime number.
 """num = int(input("Enter the number ="))
 count = 0
