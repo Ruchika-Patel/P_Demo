@@ -54,6 +54,12 @@ else:
     print("Not Exist element")"""
 
 #  11. How can you count the occurrences of a specific element in a list?
+list2 = [12,23,34,45,56,67,12,34,]
+num = int(input("Enter the number = "))
+result = list2.count(num)
+print(result)
+
+
 #  12. How do you slice a list to get a sub-list?
 """list = [12,23,34,45,56,67]
 list2 = list[2:4]
