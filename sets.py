@@ -261,7 +261,7 @@ median = statistics.median(my_set)
 print(median)"""
 
 #  44.Write a function to partition a set into two subsets based on a condition.
-"""def partition(s):
+def partition(s):
     my_set = set()
     my_set2 = set()
     for i in s:
@@ -271,9 +271,8 @@ print(median)"""
             my_set2.add(i)
     print(my_set)
     print(my_set2)
-
-s = {1,2,3,4,5,6,7,8,9,10}
-partition(s)"""
+s = {9,10,5,6,1,3,7,2,8,4}
+partition(s)
 
 #  45.Create a set from a list of tuples and return a set of unique second elements.
 
