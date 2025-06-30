@@ -255,13 +255,28 @@ count = len(res)
 print(count)"""
 
 #  43.Create a set from a range of numbers and find its median.
-import statistics
+"""import statistics
 my_set = set(range(1,30))
 median = statistics.median(my_set)
-print(median)
+print(median)"""
 
 #  44.Write a function to partition a set into two subsets based on a condition.
+"""def partition(s):
+    my_set = set()
+    my_set2 = set()
+    for i in s:
+        if(i <= 5):
+            my_set.add(i)
+        else:
+            my_set2.add(i)
+    print(my_set)
+    print(my_set2)
+
+s = {1,2,3,4,5,6,7,8,9,10}
+partition(s)"""
+
 #  45.Create a set from a list of tuples and return a set of unique second elements.
+
 #  46.Write a program that generates all subsets of a given set.
 
 #  47.Create a function to compute the power set of a set.
