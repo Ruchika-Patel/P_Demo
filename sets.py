@@ -216,12 +216,38 @@ for i in my_set:
     print(res)"""
 
 #  34.Write a function to determine if a set is a superset of another set.
-
-
+"""def supper_set(set1,set2):
+    return set1.issuperset(set2)
+set1 = {2,3,4,5,7}
+set2 = {3,5,6,9}
+result = supper_set(set1,set2)
+print(result)"""
+ 
 #  35.Create a set of characters from a string and display them in sorted order.
+"""str = "ruchika"
+my_set = set(str)
+s_order = sorted(my_set)
+print(s_order)"""
+
 #  36.Write a program that takes a set and returns a new set with each element doubled.
+"""set1 = {2,3,4,5,6}
+my_set = set()
+for i in set1:
+    r = i * 2
+    my_set.add(r)
+print(my_set)"""
+
 #  37.Create a function to find all unique triplets in a list that sum to zero.
+
 #  38.Write a program to find the longest subsequence in a list using sets.
+"""set1 = {1,2,3,4,5,6,7,8,9}
+list1 = []
+for i in sorted(set1):
+    if not list1 or i > list1[-1]:
+        list1.append(i)
+print(list1)"""
+ 
+
 #  39.Create a set of integers and find the product of all elements.
 """my_set = {2,3,4,5}
 pro = 1
@@ -261,24 +287,59 @@ median = statistics.median(my_set)
 print(median)"""
 
 #  44.Write a function to partition a set into two subsets based on a condition.
-def partition(s):
+"""def partition(s):
     my_set = set()
     my_set2 = set()
     for i in s:
         if(i <= 5):
             my_set.add(i)
-        else:
+        else: 
             my_set2.add(i)
     print(my_set)
     print(my_set2)
 s = {9,10,5,6,1,3,7,2,8,4}
-partition(s)
+partition(s)"""
 
 #  45.Create a set from a list of tuples and return a set of unique second elements.
-
+"""my_list = [(1, 'a'), (2, 'b'), (3, 'c'), (1, 'd')]
+my_set = set()
+for tup in my_list:
+    my_set.add(tup[1])
+print(my_set)"""
+ 
 #  46.Write a program that generates all subsets of a given set.
+"""import itertools
+my_set = {1,2,3,4}
+my_list = []
+for i in range(len(my_set)+1):
+    for j in itertools.combinations(my_set,i):
+        my_list.append(set(j))
+for k in my_list:
+    print(k)"""
 
 #  47.Create a function to compute the power set of a set.
+"""import itertools
+def power_func(set1):
+    my_set = set()
+    my_list = list(set1)
+    for i in range(len(my_list)+1):
+        for j in itertools.combinations(my_list,i):
+            my_set.add(j)
+    return my_set
+
+set1 = {2,3,4}
+result = power_func(set1)
+print(result)"""
+
+
 #  48.Write a program to check if a set contains a consecutive sequence.
 #  49.Create a set of integers and write a function to find the GCD of all elements.
-#  50.Write a function that takes a set and returns the elements in reverse order.
+#  50.Write a function that takes a set and returns the elements in reverse order. 
+"""def my_func(my_set):
+    res = list(my_set)       
+    res.reverse()            
+    return res               
+
+my_set = {11, 12, 13, 14, 15,16,17,18}
+result = my_func(my_set)
+print(result)"""
