@@ -1,5 +1,4 @@
 
-
 # 1. Check if a given number is positive.
 """num = int(input("Enter the Number ="))
 if(num >= 0):
@@ -74,19 +73,13 @@ else:
     print(num, "is not prime no.")"""
 
 # 10. Check if a given string is a pangram.
-"""char = input("Enter the string =").lower()
+char = input("Enter the string =").lower()
 letter = "abcdefghijklmnopqrstuvwxyz"
-is_pangram = True
 
-for ch in letter:
-    if ch is not char:
-        is_pangram = False
-        break
-
-if is_pangram:
+if (ch in letter for ch in char):  
     print("string is a pangram")
 else:
-    print("String is not pangram")"""
+    print("String is not pangram")
 
 
 # 11. Check if a given list is empty.
@@ -142,6 +135,7 @@ else:
 if(num < 0 ):
     print("Number is Negative")
 elif(num == 0):
+
     print("Number is Zero")
 else:
     print("Not Negative and zero Number-5")""" 
@@ -200,12 +194,18 @@ else:
 
 
 # 23. Check if a given string is a valid email address.
-"""email = input("enter the email =")
-if "@" in email and "." in email and email.index("@") < email.rindex("."):
-    print("valid Email")
+"""import re
+email = input('Enter the email address =')
+pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[a-zA-Z]{2,}$'
+
+result = re.match(pattern, email)
+
+if result:
+     print('Valid Email')
 else:
-    print("Invalid Email")
-"""
+    print('Invalid email')"""
+
+
 # 24. Check if a given number is a perfect cube.
 """import math
 num = int(input("Enter the number ="))
@@ -435,3 +435,4 @@ else:
 """
  
 # 50. Check if a given number is divisible by the sum of its digits.
+  
