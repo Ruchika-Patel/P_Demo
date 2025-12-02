@@ -160,19 +160,20 @@ for i in range(1,n+1):
         print(i)"""
 
 #  22. Print the elements of a list in reverse order using a while loop.
-"""list  =[3,4,5,6,8,2]
-i = 0
-while(i <  1):
-    list.reverse()
-    print(list)
-    i = i+1"""
+"""list1 = [3, 4, 5, 6, 8, 2]
+i = len(list1) - 1  
+
+while i >= 0:
+    print(list1[i],end = " ")
+    i = i - 1"""
 
 # 23. Calculate and print the power of a given number using a for loop.
-"""n = int(input("Entr the number = "))
-for i in range(n):
-    p = n ** 2
-print(p)
-"""
+"""base = int(input("Enter the base number = "))
+exponent = int(input("Enter the exponent = "))
+result = 1
+for i in range(exponent):
+    result = result * base 
+print(f"{base} raised to the power {exponent} is: {result}")"""
 
 #  24. Check if a given string is a palindrome using a while loop.
 """str = input("Enter the string = ")
@@ -198,10 +199,12 @@ for i in range(1,n+1):
 
 
 #  26. Find and print the maximum element in a list using a for loop.
-"""list= [34,56,78,34,8,9,45,34]
-for i in list:
-    elem = max(list)
-print(elem)"""
+"""list1 = [34, 56, 78, 34, 8, 9, 45, 34]
+max_elem = list1[0]
+for i in list1:
+    if i > max_elem:
+        max_elem = i  
+print(max_elem)"""
 
 #  27. Calculate and print the factorial of each number from 1 to 10 using a for loop.
 """for i in range(1,11):
@@ -234,7 +237,7 @@ for i in range(1,n+1):
 #  30. Calculate and print the sum of all even numbers between 1 and 50 using a while loop.
 """i = 0
 sum = 0
-while(i <= 51):
+while(i <= 50):
     if(i % 2 == 0):
         sum = sum +i
     i = i+1          
