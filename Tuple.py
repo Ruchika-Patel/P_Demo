@@ -3,7 +3,7 @@
 print(color)"""
 
 #  2. Access the third element of a tuple.
-"""color = ("Red","green","Pink","Black")
+"""color = ("Red","green","Pink","Black")  
 print(color[3])"""
 
 #  3. Find the length of a tuple.
@@ -96,13 +96,13 @@ for i in range(len(tup)):
         print(tup[i][j],end = " ")"""
 
 #  19. Use the enumerate() function on a tuple.
-"""name = ("Ruchika","Ranu","manshi","priynashi","mohit")
+"""name = ("Ruchika","Ranu","manshi","priyanshi","mohit")
 for ind , i in enumerate(name):
     print(ind,i)"""
 
 #  20. Use the zip() function to combine two tuples.
-"""tpl1 = [12,34,56,76]
-tup2 = [3,4,5,7,8]
+"""tpl1 = (12,34,56,76)
+tup2 = (3,4,5,7,8)
 result = tuple(zip(tpl1 , tup2))
 print(result)"""
 
@@ -148,7 +148,8 @@ if(num == p):
 else:
     print("Not palindrome") """
 
-#  27. Write a function to find the most frequent element in a tuple.
+#  27. Write a function to find the most frequent element in a tuple. 
+
 
 
 #  28. Write a function to remove duplicate elements from a tuple.
