@@ -142,6 +142,7 @@ print(list)"""
 for i in list:
     print(i)"""
 
+
 #  26. How can you iterate over the elements of a list using a while loop?
 """list = [12,34,45,56,67,78,34,54]
 i = 0
