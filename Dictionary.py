@@ -28,7 +28,7 @@ print(dic)"""
 dic2={3:30, 4:40}
 dic3={5:50,6:60}
 res = dic1 | dic2 | dic3
-print(res)"""
+print(res)"""                        
 
 #  4. Write a Python script to check whether a given key already exists in a dictionary.
 """key = int(input("Enter the key ="))
