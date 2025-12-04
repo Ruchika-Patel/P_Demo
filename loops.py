@@ -1,13 +1,17 @@
 # Loop Assignment Question
 #  1. Print the numbers from 1 to 10 using a for loop.
-"""for i in range(1,11):
+"""n = 10
+for i in range(1,n+1):
     print(i)"""
 
 #  2. Print the even numbers from 1 to 20 using a while loop.
-"""n = 20
-for i in range(1,n+1):
+"""i = 1
+n = 20
+while i <= n:
     if(i % 2 == 0):
-        print(i)"""
+        print(i)
+    i = i + 1""" 
+
 
 #  3. Calculate and print the sum of numbers from 1 to 100 using a for loop.
 """n = 100
@@ -162,7 +166,6 @@ for i in range(1,n+1):
 #  22. Print the elements of a list in reverse order using a while loop.
 """list1 = [3, 4, 5, 6, 8, 2]
 i = len(list1) - 1  
-
 while i >= 0:
     print(list1[i],end = " ")
     i = i - 1"""
